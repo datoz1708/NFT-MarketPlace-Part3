@@ -1,0 +1,689 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2B2B2B;
+}
+
+@font-face {
+    font-family: "Work Sans";
+    src: url(font/WorkSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Space Mono";
+    src: url(font/SpaceMono-Regular.ttf);
+}
+
+header {
+    padding: 20px 50px 20px 50px;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation nav {
+    display: flex;
+    align-items: center;
+}
+
+#menu-toggle {
+    display: none ;
+}
+
+#return-to-homepage img {
+    margin-right: 10px;
+}
+
+.menu a:hover {
+    color: #A259FF;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 25px;
+    color: #ffffff;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+#signup {
+    width: 152px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: #A259FF;
+    border: none;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    padding-left: 30px;
+    background-image: url(img/icons/User.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: center;
+    background-position-x: 25px;
+}
+
+main {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.hide-on-desktop {
+    display: none;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tablinks {
+    width: 262.5px;
+    height: 60px;
+    background-color: transparent;
+    font-family: Work Sans;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    color: #858584;
+}
+
+.tablinks:hover {
+    color: #FFFFFF;
+    border-bottom: 2px solid #858584;
+}
+
+.headline h2 {
+    font-family: Work Sans;
+    font-size: 51px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.headline p {
+    font-family: Work Sans;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.table-headers {
+    margin-bottom: 20px;
+    width: 1050px;
+    height: 46px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #3B3B3B;
+    border-radius: 20px;
+    padding: 0 12px 0 12px;
+}
+
+.artist-header {
+    width: 400px;
+    text-align: left;
+}
+
+.stats-header {
+    text-align: left;
+    width: 160px;
+}
+
+.nfts-sold {
+    text-align: left;
+    width: 160px;
+}
+
+.volume {
+    text-align: left;
+    width: 160px;
+}
+
+th {
+    font-family: Space Mono;
+    color: #858584;
+}
+
+.artist-card {
+    margin-bottom: 20px;
+    height: 84px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3B3B3B;
+    border-radius: 20px;
+    padding: 0 12px 0 12px;
+}
+
+.number {
+    background-color: #2B2B2B;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 3px;
+    color: #858584;
+    font-family: Space Mono;
+}
+
+.artist-avatar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.artist-name {
+    width: 286px;
+    text-align: left;
+    font-family: Work Sans;
+    font-size: 22px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.change {
+    width: 160px;
+    text-align: left;
+    font-family: Space Mono;
+    color: #00AC4F;
+}
+
+.sold {
+    width: 160px;
+    text-align: left;
+    font-family: Space Mono;
+    color: #FFFFFF;
+}
+
+.volume-data {
+    width: 160px;
+    text-align: left;
+    font-family: Space Mono;
+    color: #FFFFFF;
+}
+
+footer {
+    background-color: #3B3B3B;
+    padding: 40px 0;
+}
+
+.footer {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.nft-marketplace-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.nft-marketplace-info p {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    color: #CCCCCC;
+    width: 238px;
+    margin: 0;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    max-width: 987.41px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.explore {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer-info h5 {
+    margin: 0;
+    font-family: Space Mono;
+    font-size: 22px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.footer-info a {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    color: #CCCCCC;
+    text-decoration: none;
+}
+
+.footer-subscribtion {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer-subscribtion p {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    color: #CCCCCC;
+    width: 330px;
+    margin: 0;
+}
+
+.footer-input {
+    display: flex;
+}
+
+#footer-email {
+    width: 420px;
+    height: 60px;
+    border-radius: 20px;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+}
+
+#footer-email::placeholder {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2B2B2B;
+}
+
+.footer-input button {
+    width: 179px;
+    height: 60px;
+    border: none;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #A259FF;
+    border-radius: 20px;
+    margin-left: -170px;
+    cursor: pointer;
+}
+
+hr {
+    max-width: 1050px;
+    margin: 20px auto;
+}
+
+.copyright {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.copyright p {
+    font-family: Work Sans;
+    font-size: 12px;
+    font-weight: 400;
+    color: #CCCCCC;
+}
+
+.burger-menu {
+    display: none;
+}
+
+@media (min-width:320px) and (max-width: 480px) {
+
+    header {
+        max-width: 375px;
+        padding: 15px 30px 15px 30px;
+    }
+
+    .navigation nav {
+        display: none;  
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+    
+    .menu-icon {
+        width: 30px;
+        height: 18px;
+        display: block;
+        cursor: pointer;
+        background-image: url(img/menu.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .menu ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .menu li {
+        margin-bottom: 10px;
+    }
+    
+    .menu-toggle:checked ~ .menu {
+        display: block;
+    }
+
+    .burger-menu {
+        width: 24px;
+        height: 24px;
+        display: block;
+        cursor: pointer;
+        background-image: url(img/icons/nav\ menu.png);
+        background-position: center;
+        background-color: transparent;
+        border: none;
+    }
+
+    main {
+        max-width: 315px;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .hide-on-desktop {
+        width: 78.75px;
+        height: 60px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        color: #858584;
+        font-weight: 600;
+        font-family: Work Sans;
+    }
+
+    .hide-on-desktop:hover {
+        border-bottom: 2px solid #858584;
+        color: #FFFFFF;
+    }
+ 
+
+    .tablinks {
+        width: 78.75px;
+        font-size: 16px;
+    }
+
+    .headline h2 {
+        font-size: 28px;
+    }
+
+    .headline p {
+        font-size: 16px;
+    }
+
+    .number {
+        background-color: transparent;
+    }
+
+    .artist-avatar img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .artist-header {
+    margin-left: 25px;
+    }
+
+    .stats-header {
+        width: 100px;
+    }
+
+    .volume {
+        width: 100px;
+        text-align: center;
+    }
+
+    .nfts-sold {
+        display: none;
+    }
+
+    .sold {
+        display: none;
+    }
+
+    .table-headers {
+        width: 315px;
+        height: 50px;
+    }
+
+    .artist-card {
+        width: 315px;
+        height: 50px;
+    }
+    
+    .volume-data {
+        width: 80px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .stats-header {
+        display: none;
+    }
+
+    .artist-header {
+        width: 200px;
+    }
+
+    .artist-name {
+        width: 130px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .change {
+        display: none;
+    }
+
+    .footer {
+        max-width: 315px;
+    }
+
+    .footer-info {
+        flex-direction: column;
+    }
+
+    .footer p {
+        width: 100%;
+    }
+
+    .footer-input {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    #footer-email {
+        width: 315px;
+        height: 46px;
+    }
+
+    .footer-input button {
+        background-image: url(img/icons/email.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: 90px;
+        padding-left: 25px;
+        width: 315px;
+        height: 46px;
+        margin: 0;
+    }
+
+    hr {
+        width: 315px;
+    }
+
+    .copyright {
+        max-width: 315px;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 1024px) {
+
+        header {
+            max-width: 834px;
+            padding: 15px 50px 15px 50px;
+        }
+
+        .navigation nav {
+            display: none;  
+        }
+
+        #menu-toggle {
+            display: none;
+        }
+        
+        .menu-icon {
+            width: 30px;
+            height: 18px;
+            display: block;
+            cursor: pointer;
+            background-image: url(img/menu.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .menu li {
+            margin-bottom: 10px;
+        }
+        
+        .menu-toggle:checked ~ .menu {
+            display: block;
+        }
+
+        .burger-menu {
+            width: 24px;
+            height: 24px;
+            display: block;
+            cursor: pointer;
+            background-image: url(img/icons/nav\ menu.png);
+            background-position: center;
+            background-color: transparent;
+            border: none;
+        }
+
+        main {
+            max-width: 690px;
+        }
+
+        .tablinks {
+            width: 170px;
+            font-size: 16px;
+        }
+        
+
+        .headline h2 {
+            font-size: 38px;
+        }
+
+        .headline p {
+            font-size: 16px;
+        }
+
+        .number {
+            background-color: transparent;
+        }
+
+        .artist-avatar img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .stats-header {
+            width: 100px;
+        }
+
+        .volume {
+            width: 100px;
+        }
+
+        .nfts-sold {
+            display: none;
+        }
+
+        .sold {
+            display: none;
+        }
+
+        .table-headers {
+            width: 690px;
+            height: 60px;
+        }
+
+        .artist-card {
+            width: 690px;
+            height: 60px;
+        }
+        
+        .volume-data {
+            width: 100px;
+        }
+
+        .change {
+            width: 100px;
+        }
+
+        .footer {
+            max-width: 690px;
+        }
+
+        .footer-info {
+            flex-direction: column;
+        }
+
+        .footer p {
+            width: 100%;
+        }
+
+        hr {
+            width: 690px;
+        }
+
+        .copyright {
+            max-width: 690px;
+        }
+    }
+
+
